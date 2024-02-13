@@ -13,6 +13,7 @@ def inputFile():
             Buffer = int(file.readline().strip())
             m, n = map(int, file.readline().strip().split())
             Matrix_File = []
+            Arr_Token = set(Matrix_File)
             for _ in range(m):
                 row = list(map(str, file.readline().strip().split()))
                 Matrix_File.append(row)
@@ -26,6 +27,7 @@ def inputFile():
             for i in range(Sum_CQ):
                 print(Arr_CQ[i])
                 print(Arr_CQ_Val[i])
+            Algoritma(Matrix_File,m,n,Buffer,Arr_Token,Arr_CQ,Arr_CQ_Val)
     else:
         print("File Tidak Ditemukan. ")
         inputFile()
@@ -71,6 +73,7 @@ def inputOto():
     for i in range(SumCQ):
         print(Arr_CQ[i])
         print(Arr_CQ_Val[i])
+    Algoritma(Matrix_Hasil,DimensiMat[0],DimensiMat[1],Buffer,Arr_Token,Arr_CQ,Arr_CQ_Val)
 
 def inputOptions():
     print("1. Input Dengan File ")
