@@ -133,5 +133,5 @@ def Possible_Paths(m,n,Buffer,x,y,vertical):
     
     print("temp")
 if __name__ == "__main__":
-    #inputOptions()
-    Possible_Paths(4,4,4,0)
+    inputOptions()
+    #Possible_Paths(4,4,4,0)
